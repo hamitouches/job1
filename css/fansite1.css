@@ -93,18 +93,6 @@
     box-sizing: border-box;
 }
 
-h1 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 3rem;
-}
-
-/*Effacer le style par defaut des éléments a*/
-a {
-    text-decoration: none;
-}
-
 /*Effacer le style par defaut des éléments ol et ul*/
 ol, ul {
     list-style: none;
@@ -142,8 +130,8 @@ ol, ul {
 /*Se utiliza una función para calcular la altura, la operación es la siguiente:*/
 /*Queremos que mida el 100% de la altura de la ventana menos la altura del header*/
 .menu_hamburguer:checked+.ul_links {
-    height: calc(60vh - var(--hauteur_header));
-    max-height: 900px;
+    height: calc(40vh - var(--hauteur_header));
+    min-height: 400px;
     max-width: 600px;
 }
 
@@ -180,16 +168,12 @@ ol, ul {
     justify-content: center;
     align-items: flex-end;
     padding-right: 1rem;
-    gap: 1rem;
+    gap: 3rem;
     /*anima la transición otorgándole una cantidad de tiempo para cambiar de un estado al otro*/
     transition: all .3s;
 }
 
-/*options menu text container*/
- /*.li_links {
-
- }*/
-
+/* .li_links {} */
 
 /*Donner le style aux liens du menu*/
 .link {
@@ -198,4 +182,15 @@ ol, ul {
     font-weight: bold;
     padding: 20px;
 }
+
+
+
+h1 {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 3rem;
+}
+
+
 
