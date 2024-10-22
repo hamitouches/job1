@@ -187,7 +187,7 @@ ol, ul {
     font-size: 1,3em;
     color: var(--couleur_blanc);
     font-weight: lighter;
-    padding: 5px;
+    padding: 0 20px;
 }
 
 h1 {
