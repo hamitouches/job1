@@ -1,0 +1,111 @@
+:root {
+    --primary-color:rgb(59, 59, 59);
+    --secondary-color: rgb(255, 255, 255);
+    --tertiary-color: rgba(8, 121, 165, 1);
+    --hauteur_header: 100px;
+    --hauteur_footer: 150px;
+    --padding_left_right: 2vw;
+}
+
+
+/*MOBILE FIRST*/
+
+/*Réinisialiter les styles par defaut des navigateurs*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Définision du style des éléments background-color et font-family*/
+body {
+    background-color: var(--couleur_blanc);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Effacer le style par defaut des éléments a*/
+a {
+    text-decoration: none;
+}
+
+/*Effacer le style par defaut des éléments ol et ul*/
+ol, ul {
+    list-style: none;
+}
+
+/*Définition du alteur et coleur du fond*/
+.header {
+    height: var(--hauteur_header);
+    background-color: var(--primary-color);
+}
+
+/*Le style du conteneur navbar*/
+.navbar {
+    height: 100%; /*pour occuper tout l'hauteur du header*/
+    display: flex; /*Positioner les éléments les uns au coté des autres*/
+    justify-content: space-between; /*Éloigner les éléments les uns des autres*/
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right); /*Padding du 0 par top et bottom, et de 2 par left et right*/
+}
+
+
+/*Cacher l'élément check-box, sont les éléments de notre menu*/
+.menu_hamburguer {
+    display: none;
+}
+
+/*Captamos el elemento por su ID, cuando el check-box esté en estado checked*/
+/*el signo + significa que el elemento al lado (ul_links, en este caso) será modificado*/
+/*En este caso, para asignar la altura al elemento ul_links*/
+/*Se utiliza una función para calcular la altura, la operación es la siguiente:*/
+/*Queremos que mida el 100% de la altura de la ventana menos la altura del header*/
+.menu_hamburguer:checked+.ul_links {
+    height: calc(50vh - var(--hauteur_header));
+}
+
+.label_hamburguer {
+
+
+}
+
+/*Le da un color blanco al icono hamburguer               */
+.list_icon {
+    color: var(--couleur_blanc);
+    cursor: pointer; /* indica que el elemento es clicable */
+}
+
+/*Des options du menu*/
+.ul_links {
+    width: 100%;
+    background-color: var(--tertiary-color);
+    position: absolute;
+    /*el elemento  ul_links comienza abajo del header*/
+    top: var(--hauteur_header);
+    /*sin espacio a la izquierda*/
+    left: 0;
+    /*sin espacio arriba*/
+    height: 0;
+    /*Cacher la list quand est pas check*/
+    overflow: hidden;
+    /* ----------------->height: calc(100vh - var(--altura_header)); */
+    /*Type de conteneur*/
+    display: flex;
+    /*Positioner les éléments en colonne*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 1rem;
+    gap: 3rem;
+    /*anima la transición otorgándole una cantidad de tiempo para cambiar de un estado al otro*/
+    transition: all .3s;
+}
+
+.li_links {}
+
+/*Donner le style aux liens du menu*/
+.link {
+    font-size: 3em;
+    color: var(--couleur_blanc);
+    font-weight: bold;
+}
