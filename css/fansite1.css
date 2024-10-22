@@ -142,7 +142,7 @@ ol, ul {
 
 /*Le da un color blanco al icono hamburguer               */
 .list_icon {
-    color: var(--couleur_blanc);
+    color: var(--secondary-color);
     cursor: pointer; /* indica que el elemento es clicable */
 }
 
@@ -178,19 +178,8 @@ ol, ul {
 /*Donner le style aux liens du menu*/
 .link {
     font-size: 2em;
-    color: var(--couleur_blanc);
     font-weight: bold;
     padding: 20px;
+    color: var(--secondary-color);
 }
-
-
-
-h1 {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        font-size: 3rem;
-}
-
-
 
