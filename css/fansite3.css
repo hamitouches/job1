@@ -33,6 +33,7 @@ h1 {
 .un{
     display: flex;
     justify-content: center;
+    
 }
 .one{
     border-style: hidden;
