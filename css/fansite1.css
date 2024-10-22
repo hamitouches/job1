@@ -183,3 +183,9 @@ ol, ul {
     color: var(--secondary-color);
 }
 
+.link_child {
+    font-size: 1,3em;
+    color: var(--couleur_blanc);
+    font-weight: lighter;
+    padding: 5px;
+}
