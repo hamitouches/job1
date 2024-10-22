@@ -189,3 +189,14 @@ ol, ul {
     font-weight: lighter;
     padding: 5px;
 }
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 20px o;
+    color: var(--primary-color);
+}
