@@ -1,5 +1,5 @@
 :root {
-    --primary-color:rgb(59, 59, 59);
+    --primary-color:rgb(19, 19, 19);
     --secondary-color: rgb(255, 255, 255);
     --tertiary-color: rgba(8, 121, 165, 1);
     --black-transparent: rgba(0, 0, 0, 0.7);
@@ -82,7 +82,15 @@
     font-style: italic;
   }
   
+  body {
+    background-color: var(--secondary-color);
+    font-family: "Roboto", sans-serif;
+}
 
+/*Effacer le style par defaut des éléments a*/
+a {
+    text-decoration: none;
+}
 
 /*MOBILE FIRST*/
 
@@ -100,8 +108,12 @@ ol, ul {
 
 /*Définition du alteur et coleur du fond*/
 .header {
+    /* position: sticky;
+    top: 0; */
+    box-shadow: 0 5px 5px rgba(60, 60, 60, 0.5);
     height: var(--hauteur_header);
     background-color: var(--primary-color);
+    z-index: 99;
 }
 
 /*Le style du conteneur navbar*/
@@ -129,9 +141,9 @@ ol, ul {
 /*En este caso, para asignar la altura al elemento ul_links*/
 /*Se utiliza una función para calcular la altura, la operación es la siguiente:*/
 /*Queremos que mida el 100% de la altura de la ventana menos la altura del header*/
-.menu_hamburguer:checked+.ul_links {
-    height: calc(40vh - var(--hauteur_header));
-    min-height: 400px;
+.menu_hamburguer:checked+.ul_links_kombi {
+    height: calc(100vh - var(--hauteur_header));
+    min-height: 200px;
     max-width: 600px;
 }
 
@@ -142,12 +154,13 @@ ol, ul {
 
 /*Le da un color blanco al icono hamburguer               */
 .list_icon {
-    color: var(--secondary-color);
+    color: var(--couleur_blanc);
     cursor: pointer; /* indica que el elemento es clicable */
 }
 
 /*Des options du menu*/
-.ul_links {
+.ul_links_kombi {
+    width: 200px;
     max-width: 500px;
     background-color: var(--black-transparent);
     color: var(--secondary-color);
@@ -165,29 +178,41 @@ ol, ul {
     display: flex;
     /*Positioner les éléments en colonne*/
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
     padding-right: 1rem;
-    gap: 3rem;
+    gap: 1rem;
     /*anima la transición otorgándole una cantidad de tiempo para cambiar de un estado al otro*/
     transition: all .3s;
 }
 
-/* .li_links {} */
+/*options menu text container*/
+ /*.li_links {
+
+ }*/
+
 
 /*Donner le style aux liens du menu*/
 .link {
-    font-size: 2em;
-    font-weight: bold;
-    padding: 20px;
+    font-size: 1,5em;
     color: var(--secondary-color);
+    font-weight: bold;
+    padding: 1,5em;
+}
+
+.link:hover {
+    background-color: var(--primary-color);
 }
 
 .link_child {
     font-size: 1,3em;
-    color: var(--couleur_blanc);
+    color: var(--secondary-color);
     font-weight: lighter;
-    padding: 0 20px;
+    padding: 5px;
+}
+
+.link:hover {
+    background-color: var(--primary-color);
 }
 
 h1 {
@@ -199,10 +224,11 @@ h1 {
 }
 
 .main-title {
-    padding: 50px 0;
+    /* padding: 50px 0; */
     position: absolute;
-    right: 50px;
-    top: 30dvh;
+    top: 50%;
+    right: 20%;
+    transform: translate(50%, 50%);
 }
 
 .main-section {
