@@ -67,6 +67,8 @@ ol, ul {
 /*Queremos que mida el 100% de la altura de la ventana menos la altura del header*/
 .menu_hamburguer:checked+.ul_links {
     height: calc(40vh - var(--hauteur_header));
+    min-height: 400px;
+    max-width: 600px;
 }
 
 /* .label_hamburguer {
@@ -82,7 +84,7 @@ ol, ul {
 
 /*Des options du menu*/
 .ul_links {
-    width: 60%;
+    max-width: 500px;
     background-color: var(--black-transparent);
     color: var(--secondary-color);
     position: absolute;
@@ -114,4 +116,5 @@ ol, ul {
     font-size: 2em;
     color: var(--couleur_blanc);
     font-weight: bold;
+    padding: 20px;
 }
