@@ -195,8 +195,36 @@ h1 {
     font-weight: 500;
     font-style: normal;
     font-size: 3rem;
+    color: var(--secondary-color);
+}
+
+.main-title {
+    padding: 50px 0;
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+
+.main-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px o;
-    color: var(--primary-color);
+}
+
+.upper-image {
+    top: 90px;
+    text-align: right;
+}
+
+.upper-image img{
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.rubriques {
+    padding: 0 20px;
+}
+
+h2 {
+    padding: 20px 0;
 }
