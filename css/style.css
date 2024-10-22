@@ -109,7 +109,11 @@ ol, ul {
     transition: all .3s;
 }
 
-/* .li_links {} */
+/*options menu text container*/
+ /*.li_links {
+
+ }*/
+
 
 /*Donner le style aux liens du menu*/
 .link {
@@ -117,4 +121,11 @@ ol, ul {
     color: var(--couleur_blanc);
     font-weight: bold;
     padding: 20px;
+}
+
+.link_child {
+    font-size: 1,3em;
+    color: var(--couleur_blanc);
+    font-weight: lighter;
+    padding: 5px;
 }
