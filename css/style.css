@@ -69,10 +69,10 @@ ol, ul {
     height: calc(40vh - var(--hauteur_header));
 }
 
-.label_hamburguer {
+/* .label_hamburguer {
 
 
-}
+} */
 
 /*Le da un color blanco al icono hamburguer               */
 .list_icon {
@@ -107,7 +107,7 @@ ol, ul {
     transition: all .3s;
 }
 
-.li_links {}
+/* .li_links {} */
 
 /*Donner le style aux liens du menu*/
 .link {
