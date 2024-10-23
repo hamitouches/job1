@@ -166,6 +166,7 @@ ol, ul {
 .ul_links {
     width: 200px;
     max-width: 500px;
+    max-height: 200px;
     background-color: var(--black-transparent);
     color: var(--secondary-color);
     position: absolute;
@@ -223,6 +224,72 @@ ol, ul {
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
+/*------------------MISE EN PAGE---------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+
+.container_index {
+  /* border: 1px solid red; */
+}
+
+.title1_index {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  color: var(--primary-color);
+  font-weight: 400;
+  /* border: 1px solid blue; */
+  padding: 10px;
+}
+
+.description_container {
+  /* border: 1px solid green; */
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 20px;
+}
+
+.title2_index {
+  font-size: 2rem;
+  color: var(--secondary-color);
+  line-height: 30px;
+}
+.text_description {
+  /* border: 4px solid orangered; */
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 28px;
+}
+.artist_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 20px;
+}
+.left_column_artist {
+}
+.title3_index {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+.text_artist {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 24px;
+}
+.right_column_artist {
+}
+.videos_index {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
 /*------------------FOOTER---------------------------*/
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
@@ -274,9 +341,9 @@ ol, ul {
   /* border: 1px solid green; */
   padding-left: 10px;
 }
-.li_links_footer {
+/* .li_links_footer { */
   /* border: 1px solid blue; */
-}
+/*} */
 
 .link_footer {
   font-size: 1,5em;
@@ -286,8 +353,9 @@ ol, ul {
   margin: 1em 0;
   /* border: 1px solid purple; */
 }
-.li_links {
-}
+
+/* .li_links {
+} */
 
 .link_footer:hover {
   background-color: var(--primary-color);
