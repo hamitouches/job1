@@ -87,6 +87,15 @@
     font-family: "Roboto", sans-serif;
 }
 
+/* Police rock salt */
+
+.rock-salt-regular {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*Effacer le style par defaut des éléments a*/
 a {
     text-decoration: none;
@@ -124,6 +133,12 @@ ol, ul {
     align-items: center;
     flex-wrap: wrap;
     padding: 0 var(--padding_left_right); /*Padding du 0 par top et bottom, et de 2 par left et right*/
+}
+
+.logo-size {
+  height: 100%;
+  object-fit: scale-down;
+  align-content: center;
 }
 
 .logo {
@@ -216,15 +231,14 @@ ol, ul {
 }
 
 h1 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     color: var(--secondary-color);
 }
 
 .main-title {
-    /* padding: 50px 0; */
     position: absolute;
     top: 50%;
     right: 20%;
