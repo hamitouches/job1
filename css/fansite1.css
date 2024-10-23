@@ -266,7 +266,7 @@ h1 {
 }
 
 .anchor-target {
-  padding-top: 90px; 
+  padding-top: var(--hauteur_header); 
   margin-top: -90px; 
 }
 
@@ -319,4 +319,16 @@ h2 {
   font-style: italic;
   border-bottom: 1px solid var(--primary-color);
   margin-bottom: 20px;
+}
+
+.pictures-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pictures-photo {
+  width: 80vw;
+  object-fit: scale-down;
+  padding: 10px 0;
 }
