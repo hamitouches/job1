@@ -9,12 +9,87 @@
 </head>
 <body>
     <main>
-        <h1><strong><center>Idir : l'emblême de la musique kabyle</center></strong></h1>
-        
-    
-        <section class="un">
-            <center><img src="images/idir1.jpg" width="880px" height="600px"></center>
+        <header class="header">
+            <!--Création de contenur pour le menu-->
+            <nav class="navbar">
 
+                <!--Logo-->
+                <img class="logo" src="images/logo.png">
+
+                
+
+                <label class="label_hamburguer" for="menu_hamburguer">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="35"
+                        height="35"
+                        fill="#ffffff"
+                        class="list_icon"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                    </svg>
+                </label>
+
+                <!--Élément checkbox pour l'interaction de menu hamburguer-->
+                <input class="menu_hamburguer" type="checkbox" name="" id="menu_hamburguer">
+
+                <!--Création d'options pour la navigation-->
+                <ul class="ul_links_kombi">
+                    <li class="li_links">
+                        <a href="index.html" class="link">Home</a>
+                    </li>
+                    <li class="li_links">
+                        <a href="fansite1.html" class="link">Damien Saez</a>
+                    </li>
+                    <li class="li_links">
+                        <a href="fansite2.html" class="link">Kombilesa Mí</a>
+                    </li>
+                    <li class="li_links">
+                        <a href="fansite3.html" class="link">Idir</a>
+                    </Li>
+                    <li class="Li_links">
+                        <li class="Li_links">
+                            <a href="#biographie" class="link_child">Biographie</a>
+                        </li>
+                        <li class="Li-links">
+                            <a href="#actualité" class="link_child">Actualité</a>
+                        </li> 
+                       <li class="Li_links">
+                            <a href="#album" class="link_child">Album et réalisations</a>
+                        </li>
+                        <li class="Li_links">
+                            <a href="#evenements" class="link_child">Événements passés</a>
+                        </li>
+                        <li class="Li_links">
+                            <a href="#photo" class="link_child">Photos et vidéos</a>
+                        </li>
+                        <li class="Li_links">
+                            <a href="#lien" class="link_child">Liens vers d’autres sites de fans</a>
+                        </li>
+                        <li class="Li_links">
+                            <a href="#lien2" class="link_child">Liens vers les réseaux sociaux</a>
+                        </li>
+                    </li>
+                </ul>
+
+
+            </nav>
+        </header>
+        <section class="un">
+
+            <section class="cover-title">
+                <h1><strong><center class="main-title">Idir : l'emblême de la musique kabyle </center></strong></h1>
+
+                <figure class="photo">
+                    <img class="photo-img" src="images/idir2.webp" alt="Idir en concert">
+                </figure>
+            </section>  
+        </section>
+        <section class="head">
             <h2><strong><center>Biographie</center></strong></h2>
 
             <p>
@@ -30,7 +105,7 @@
             <section class="rubriques">
                 <article id="actu">
                     <h2><strong><center>Actualité</center></strong></h2>
-                    <p>Une place baptisée au nom d'Idir au centre de Toulouse</p>
+                    <p><strong>Une place baptisée au nom d'Idir au centre de Toulouse</strong> </p>
                     C'est une première depuis le décès en mai 2020 du chanteur et intellectuel algérien Hamid Cheriet1, connu sous le nom d'artiste d'Idir. La mairie de Toulouse a baptisé, le mardi 25 octobre, une place en plein centre ville au nom de ce chanteur d'expression.</p>
                     <section class="photosmort">
                         <img src="images/place-idir-toulouse-900x545.jpg" width="250px" height="150px">
@@ -41,8 +116,19 @@
 
                 
                 <article class="realisations">
-                    <h2><strong><center>Réalisations</center></strong></h2>
-                    <section class="rea">
+                    <h2><strong><center>Albums et réalisations</center></strong></h2>
+                    <section class="album1">
+                        <img src="images/album1.jpg" width="230px" height="230px">
+                        <img src="images/album2.jpg" width="230px" height="230px">
+                    </section>
+                    <section class="album2">
+                        <img src="images/album3.jpg" width="230px" height="230px">
+                        <img src="images/album4.jpg" width="230px" height="230px">
+                    </section>
+                </article>
+                <article class="event">
+                    <h2><strong><center>Événements passés</center></strong></h2>
+                    <section class="event1">
                         <li class="one"> 
                             De la musique kabyle : Avec des titres emblématiques comme "A Vava Inouva", il a fait découvrir la musique berbère au grand public, tant en Algérie qu’à l'international.
                         </li>
@@ -56,42 +142,35 @@
                             Thèmes engagés : Ses chansons abordent des questions d’identité, d’exil et de mémoire, touchant des générations entières.
 
                         </li>
-                        
+                    </section>
+                    <section class="event2">
                         <li class="four">
-                            Collaborations : Idir a travaillé avec de nombreux artistes de divers horizons, enrichissant sa musique de collaborations avec des musiciens arabes, français et africains.
-
+                         Collaborations : Idir a travaillé avec de nombreux artistes de divers horizons, enrichissant sa musique de collaborations avec des musiciens arabes, français et africains.
                         </li>
-                        
                         <li class="five">
-                            Ambassadeur culturel : Il a joué un rôle clé dans la promotion de la culture berbère et a été un porte-parole des droits des Berbères, notamment à travers ses concerts et ses interventions.
-
-                        </li>
-                        
-                        <li class="six">
-                           Reconnaissance internationale : Ses œuvres ont été saluées dans le monde entier, contribuant à l’émergence de la musique du monde.
-
+                        Ambassadeur culturel : Il a joué un rôle clé dans la promotion de la culture berbère et a été un porte-parole des droits des Berbères, notamment à travers ses concerts et ses interventions.
                         </li>
                     </section>
-                </article>
-                <article class="event">
-                    <h2><strong><center>Événements passés</center></strong></h2>
-                    <p>Idir, malheureusement, est décédé le 2 mai 2020. Sa mort a été un événement marquant, suscitant une grande émotion parmi ses fans et la communauté musicale.
-
-                        Avant son décès, il avait effectué une tournée en 2019 pour célébrer ses 50 ans de carrière, avec des concerts mémorables en France et en Algérie. Son dernier album, "Idir, la voix des ancêtres", sorti en 2018, a également été bien accueilli, marquant une continuité de son engagement artistique.
-                        
-                        Depuis son départ, plusieurs hommages lui ont été rendus, soulignant son influence durable sur la musique et la culture berbère. Des événements commémoratifs et des concerts en son honneur ont eu lieu, rappelant son héritage et son impact.</p>
-                </article>
+               </article>
 
                 <article class="pv">
                     <h2><strong><center>Photos et vidéos</center></strong></h2>
-                    <img src="images/_112095014_idirgettyimages-160693995.jpg" width="250px" height="150px">
-                    <img src="images/R.jpg" width="250px" height="250px">
-                    <img src="images/idir2.webp" width="250px" height="150px">
+                    <section class="photo1">
+                        <img src="images/idirphoto.jpg" width="280px" height="280px">
+                        <img src="images/R.jpg" width="280px" height="280pxpx">
+                    </section>
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/_OdLkO02myw?si=opi-UF0_UPnyYdHS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
                 </article>
 
                 <article class="fan">
                     <h2><strong><center>Liens vers d’autres sites de fans</center></strong></h2>
-                     <p>...</p>
+                     <li>
+                        <a href="https://www.tsa-algerie.com/idir-sa-famille-devoile-sa-derniere-volonte/">
+                            <img src="images/R.jpg" width="250px" height="250px">
+                        </a>
+                    </li>
+                     <li><a href="https://www.radiofrance.com/actualite/hommage-de-la-semaine-idir">hommage-de-la-semaine-idir</a></li>
+                     <li><a href="https://paroles2chansons.lemonde.fr/paroles-idir">paroles-idir</a></li>
                 </article>
 
                 <section class="rs">
@@ -99,11 +178,7 @@
                     <li><a href="https://fr.wikipedia.org/wiki/Idir">Wikipédia</a></li>
                     <li><a href="https://www.instagram.com/tanina_che?igsh=NGM4eGh3a215ejIx">Instagram de la fille de Idir, Tanina</a></li>
                 </section>
-
-                <section class="contact">
-                    <h2><strong><center>Formulaire de contact</center></strong></h2>
-                </section>
-
+            </section>
         </section>
         
     </main>
