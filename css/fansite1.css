@@ -226,7 +226,7 @@ ol, ul {
     padding: 5px;
 }
 
-.link:hover {
+.link_child:hover {
     background-color: var(--primary-color);
 }
 
