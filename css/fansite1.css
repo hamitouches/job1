@@ -333,12 +333,39 @@ h2 {
   padding: 10px 0;
 }
 
+/* Section liens des sites de fans */
+
+.links-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.links-style {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0 20px 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.links-style:hover {
+  color: var(--tertiary-color);
+}
+
 /* Section réseaux sociaux */
 
 .network {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding-bottom: 20px;
+  max-width: 100vw;
 }
 
 .social-network {
@@ -405,9 +432,6 @@ h2 {
   /* border: 1px solid green; */
   padding-left: 10px;
 }
-.li_links_footer {
-  /* border: 1px solid blue; */
-}
 
 .link_footer {
   font-size: 1,5em;
@@ -416,8 +440,6 @@ h2 {
   padding: 1,5em;
   margin: 1em 0;
   /* border: 1px solid purple; */
-}
-.li_links {
 }
 
 .link_footer:hover {
