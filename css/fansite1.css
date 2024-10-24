@@ -4,6 +4,8 @@
     --tertiary-color: rgb(146, 4, 30);
     --black-transparent: rgba(0, 0, 0, 0.7);
     --hauteur_header: 90px;
+    --hauteur_header_medium_size: 120px;
+    --hauteur_header_large_size: 200px;
     --hauteur_footer: 150px;
     --padding_left_right: 2vw;
 }
@@ -123,6 +125,10 @@ ol, ul {
     height: var(--hauteur_header);
     background-color: var(--primary-color);
     z-index: 99;
+
+    li {
+      font-size: 1.5em;
+    }
 }
 
 /*Le style du conteneur navbar*/
@@ -161,11 +167,6 @@ ol, ul {
     min-height: 200px;
     max-width: 600px;
 }
-
-/* .label_hamburguer {
-
-
-} */
 
 /*Le da un color blanco al icono hamburguer               */
 .list_icon {
@@ -230,154 +231,170 @@ ol, ul {
     background-color: var(--primary-color);
 }
 
-h1 {
+/* Style des titres et paragraphes */
+
+h2 {
+  padding: 20px 0;
+  color: var(--primary-color);
+  font-size: 3em;
+}
+
+p {
+font-size: 1.5em;
+}
+
+/* Style de la bannière et titre h1 */
+
+.banner {
+  position: relative;
+  display: inline-block;
+
+  .banner-image {
+    width: 100vw;
+  }
+
+
+  .main-title {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+
+
     font-family: "Rock Salt", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
     color: var(--secondary-color);
+  }
+
 }
 
-.main-title {
-    position: absolute;
-    top: 15%;
-    right: 30%;
-    transform: translate(50%, 50%);
-}
+/* Style des différentes sections */
 
 .main-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .rubriques {
+      padding: 0 20px; 
+
+      .anchor-target {
+        padding-top: var(--hauteur_header); 
+        margin-top: -90px;
+  
+        /* Section des réalisations */
+  
+        .album {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+        
+          .album-image {
+            border: 1px solid var(--primary-color);
+            width: 80vw;
+          }
+        
+          .album-description {
+            display: flex;
+            justify-content: center;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.5em;
+            padding: 20px 0;
+          }
+        }
+  
+        .live {
+          .live-date {
+            font-family: "Roboto", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+          
+          .live-city {
+            padding: 20px 0;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            border-bottom: 1px solid var(--primary-color);
+            margin-bottom: 20px;
+          }
+        }
+        
+        .live:hover {
+          color: var(--tertiary-color);
+        }
+  
+        /* Section des photos et vidéos */
+  
+        .pictures-align {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        
+        .pictures-photo {
+          width: 80vw;
+          object-fit: scale-down;
+          padding: 10px 0;
+        }
+  
+        /* Section liens des sites de fans */
+  
+        .links-section {
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          flex-wrap: wrap;
+  
+          .links-style {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding: 20px 0 20px 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 1.2em;
+            color: var(--primary-color);
+          }
+          
+          .links-style:hover {
+            color: var(--tertiary-color);
+          }
+        }
+  
+        /* Section réseaux sociaux */
+  
+        .network {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          padding-bottom: 20px;
+          max-width: 100vw;
+  
+          .social-network {
+            padding: 20px;
+          
+            img {
+              height: 50px;
+            }  
+          
+          }
+        }
+      }
+    }
+
+    
+    
+    #realisations h2 {
+      padding-bottom: 0;
+    }
 }
-
-.upper-image {
-    top: 90px;
-    text-align: right;
-}
-
-.upper-image img{
-    object-fit: scale-down;
-    max-width: 100%;
-}
-
-.rubriques {
-  padding: 0 20px; 
-}
-
-.anchor-target {
-  padding-top: var(--hauteur_header); 
-  margin-top: -90px; 
-}
-
-h2 {
-    padding: 20px 0;
-    color: var(--primary-color);
-}
-
-.album {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.album-image {
-  border: 1px solid var(--primary-color);
-  width: 80vw;
-}
-
-.album-description {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.5em;
-  padding: 20px 0;
-}
-
-#realisations h2 {
-  padding-bottom: 0;
-}
-
-.live:hover {
-  color: var(--tertiary-color);
-}
-
-.live-date {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.live-city {
-  padding: 20px 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  border-bottom: 1px solid var(--primary-color);
-  margin-bottom: 20px;
-}
-
-.pictures-align {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.pictures-photo {
-  width: 80vw;
-  object-fit: scale-down;
-  padding: 10px 0;
-}
-
-/* Section liens des sites de fans */
-
-.links-section {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.links-style {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  padding: 20px 0 20px 10px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.2em;
-  color: var(--primary-color);
-}
-
-.links-style:hover {
-  color: var(--tertiary-color);
-}
-
-/* Section réseaux sociaux */
-
-.network {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-bottom: 20px;
-  max-width: 100vw;
-}
-
-.social-network {
-  padding: 20px;
-
-  img {
-    height: 50px;
-  }  
-
-}
-
-
 
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
@@ -457,3 +474,215 @@ h2 {
 .link_child_footer:hover {
   background-color: var(--primary-color);
 }
+
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+        /* MEDIA QUERIES */
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+
+/* medium size */
+
+@media all and (min-width: 768px) and (max-width: 1599px) {
+
+.header {
+  height: var(--hauteur_header_medium_size);
+
+  li {
+    font-size: 2em;
+  }
+}
+
+.label_hamburguer svg {
+  height: 90px;
+  width: 90px;
+}
+
+.ul_links_kombi {
+  top: var(--hauteur_header_medium_size);
+}
+
+.menu_hamburguer:checked+.ul_links_kombi {
+  height: calc(100vh - var(--hauteur_header_medium_size));
+  max-width: none;
+  width: fit-content;
+  padding-left: 20px;
+}
+
+h2 {
+  font-size: 5em;
+}
+
+p {
+  font-size: 2em;
+}
+  
+.banner {
+
+  .main-title {
+    font-size: 2.8em;
+  }
+
+}
+
+/* Style des différentes sections */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .rubriques {
+      padding: 0 20px; 
+
+      .anchor-target {
+        padding-top: var(--hauteur_header); 
+        margin-top: -90px;
+  
+        /* Section des réalisations */
+  
+        .album {
+          flex-direction: row;
+        
+          .album-image {
+            width: 40vw;
+            margin: 0 10px;
+          }
+        }
+  
+        /* Section des photos et vidéos */
+  
+        .pictures-align {
+          flex-direction: row;
+        }
+        
+        .pictures-photo {
+          width: 40vw;
+          margin: 0 10px;
+        }
+  
+        /* Section liens des sites de fans */
+  
+        .links-section {
+          flex-direction: row;
+          font-size: 5em;
+        }
+  
+        /* Section réseaux sociaux */
+  
+        .network {
+          .social-network {         
+            img {
+              height: 90px;
+            }  
+          
+          }
+        }
+      }
+    }
+  }
+}
+
+  /* Large size */
+
+  @media all and (min-width: 1600px) {
+
+    .header {
+      height: var(--hauteur_header_large_size);
+
+      li {
+        font-size: 3em;
+      }
+    }
+
+    .label_hamburguer svg {
+      height: 150px;
+      width: 150px;
+    }
+
+    .menu_hamburguer:checked+.ul_links_kombi {
+      height: calc(100vh - var(--hauteur_header_large_size));
+      max-width: none;
+      width: fit-content;
+      padding-left: 20px;
+    }
+
+    .ul_links_kombi {
+      top: var(--hauteur_header_large_size);
+    }    
+
+    h2 {
+      font-size: 7em;
+    }
+
+    p {
+      font-size: 3em;
+    }
+  
+    .banner {
+    
+      .main-title {
+        font-size: 6.5em;
+      }
+    
+    }
+    
+    /* Style des différentes sections */
+    
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        .rubriques {
+          padding: 0 20px; 
+    
+          .anchor-target {
+            padding-top: var(--hauteur_header); 
+            margin-top: -90px;
+      
+            /* Section des réalisations */
+      
+            .album {
+              flex-direction: row;
+            
+              .album-image {
+                width: 20vw;
+                margin: 0 10px;
+              }
+            }
+      
+            /* Section des photos et vidéos */
+      
+            .pictures-align {
+              flex-direction: row;
+            }
+            
+            .pictures-photo {
+              width: 20vw;
+              margin: 0 10px;
+            }
+      
+            /* Section liens des sites de fans */
+      
+            .links-section {
+              flex-direction: row;
+              font-size: 3em;
+            }
+      
+            /* Section réseaux sociaux */
+      
+            .network {
+              .social-network {         
+                img {
+                  height: 120px;
+                }  
+              
+              }
+            }
+          }
+        }
+      }
+    }
