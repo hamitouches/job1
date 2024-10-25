@@ -134,13 +134,13 @@ ol, ul {
 }
 
 .logo-size {
-  height: 100%;
+  height: 90%;
   object-fit: scale-down;
   align-content: center;
 }
 
 .logo {
-    height: 80%;
+    height: 70%;
     object-fit: scale-down;
 }
 
@@ -240,11 +240,11 @@ ol, ul {
   position: fixed;
   bottom: 0;
 }
+
 .img-top-button {
   width: 50px;
   padding: 10px;
 }
-
 
 
 /*---------------------------------------------------*/
@@ -376,6 +376,7 @@ ol, ul {
   width: 60vw;
   padding: 10px;
   justify-content: center;
+  transition: all .4s;
 } 
 
 .portraits_footer {
@@ -435,11 +436,13 @@ ol, ul {
 
 /*Écrans entre 426px et 1024px*/
     @media only screen and (min-width: 426px) and (max-width: 1025px) {
-      
-              /*Définition du alteur et coleur du fond*/
+
+
+              /*---------------Header section------------*/
               .header {
                 height: 120px;
                 background-color: var(--primary-color);
+                transition: all .4s;
               }
 
               /*contruction de list de pages de notre site web*/
@@ -471,9 +474,15 @@ ol, ul {
                   display: none;
               }
 
+              
+              /*-------------Top button---------*/
+              
+              .img-top-button {
+                width: 55px;
+                padding: 10px;
+                transition: all .4s;
+              }
 
-            /*------------------------------------*/
-            /*------------------------------------*/
             /*-------------Index sections---------*/
 
             .container_index {
@@ -575,10 +584,11 @@ ol, ul {
 /*---------------------*/
     @media only screen and (min-width: 1025px) {
 
-              /*Définition du alteur et coleur du fond*/
+              /*------------Header section------------*/
               .header {
                 height: 150px;
                 background-color: var(--primary-color);
+                transition: all .4s;
               }
 
               .ul_links {
@@ -587,13 +597,14 @@ ol, ul {
                 height: auto;
                 flex-direction: row;
                 gap: .1rem;
+                margin: 0 10px;
                 background-color: var(--primary-color);
               }
           
               .link {
                   font-size: 1.5rem;
                   transition: all .4s;
-                  padding: .2rem .4rem;
+                  padding: .2rem .5rem;
               }
           
               .link:hover {
@@ -609,6 +620,14 @@ ol, ul {
                   display: none;
               }
 
+
+              /*-------------Top button---------*/
+
+              .img-top-button {
+                width: 60px;
+                padding: 10px;
+                transition: all .4s;
+              }
 
 
             /*-------------Index sections---------*/
@@ -705,9 +724,6 @@ ol, ul {
               display: none;
             }
 
-        
-
-
 
             /*-------------Footer section---------*/
 
@@ -728,6 +744,6 @@ ol, ul {
               width: 30vw;
               padding: 10px;
               justify-content: center;
-              
+              transition: all .4s;
             } 
     }
