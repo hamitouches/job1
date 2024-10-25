@@ -165,13 +165,10 @@ align-content: center;
 /*Se utiliza una función para calcular la altura, la operación es la siguiente:*/
 /*Queremos que mida el 100% de la altura de la ventana menos la altura del header*/
 .menu_burger:checked+.ul_links {
-  height: calc(80vh - var(--hauteur_header));
+  height: calc(90vh - var(--hauteur_header));
   min-height: 100px;
   max-width: 600px;
 }
-
-/* .label_burger {
-} */
 
 /*Le da un color blanco al icono hamburguer               */
 .list_icon {
@@ -246,7 +243,7 @@ align-content: center;
 h2 {
   padding: 20px 0;
   color: var(--primary-color);
-  font-size: 3em;
+  font-size: 2em;
 }
 
 p {
@@ -561,7 +558,7 @@ font-size: 1.5em;
               }
 
               .img-top-button {
-                width: 100px;
+                width: 70px;
               }
 
               .li_links_anchor_parent {
@@ -578,7 +575,7 @@ font-size: 1.5em;
 
 
 h2 {
-  font-size: 5em;
+  font-size: 3em;
 }
 
 p {
@@ -717,7 +714,7 @@ p {
               }
 
               .img-top-button {
-                width: 150px;
+                width: 100px;
               }
 
               .li_links_anchor_parent {
@@ -733,7 +730,7 @@ p {
               }
 
     h2 {
-      font-size: 7em;
+      font-size: 5em;
     }
 
     p {
