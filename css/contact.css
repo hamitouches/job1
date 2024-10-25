@@ -181,7 +181,7 @@ align-content: center;
 /*Des options du menu*/
 .ul_links {
   width: 200px;
-  max-width: 500px;
+  /* max-width: 500px; */
   max-height: 200px;
   background-color: var(--black-transparent);
   color: var(--secondary-color);
@@ -215,7 +215,7 @@ align-content: center;
 
 /*Donner le style aux liens du menu*/
 .link {
-  font-size: 1,5em;
+  font-size: 1rem;
   color: var(--secondary-color);
   font-weight: bold;
   padding: 1,5em;
@@ -672,7 +672,7 @@ p {
 }
 
   .link {
-      font-size: 1rem;
+      font-size: 1.2rem;
       transition: all .4s;
       padding: .2rem .4rem;
   }
@@ -792,7 +792,7 @@ p {
 /*---------------------*/
 /*Écrans minimum 1025px*/
 /*---------------------*/
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1026px) {
 
   /*Définition du alteur et coleur du fond*/
   .header {
@@ -810,7 +810,7 @@ p {
   }
 
   .link {
-      font-size: 1.5rem;
+      font-size: 2rem;
       transition: all .4s;
       padding: .2rem .4rem;
   }
