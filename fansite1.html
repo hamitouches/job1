@@ -38,7 +38,7 @@
 
             
 
-            <label class="label_hamburguer" for="menu_hamburguer">
+            <label class="label_burger" for="menu_burger">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="35"
@@ -55,43 +55,49 @@
             </label>
 
             <!--Élément checkbox pour l'interaction de menu hamburguer-->
-            <input class="menu_hamburguer" type="checkbox" name="" id="menu_hamburguer">
+            <input class="menu_burger" type="checkbox" name="" id="menu_burger">
 
             <!--Création d'options pour la navigation-->
-            <ul class="ul_links_kombi">
-                <li class="li_links">
-                    <a href="index.html" class="link">Home</a>
-                </li>
-                <li class="li_links">
+            <ul class="ul_links">
+
+                <!-- <li class="li_links">
                     <a href="fansite1.html" class="link">Damien Saez</a>
-                </li>
+                </li> -->
 
-                <li class="li_links">
-                    <a href="#biographie" class="link_child" class="menu_hamburguer">Biographie</a>
-                </li>
-                <li class="li_links">
-                    <a href="#news" class="link_child">Actualité</a>
-                </li>
-                <li class="li_links">
-                    <a href="#realisations" class="link_child">Réalisations</a>
-                </li>
-                <li class="li_links">
-                    <a href="#event" class="link_child">Événements</a>
-                </li>
-                <li class="li_links">
-                    <a href="#pictures" class="link_child">Photos et vidéos</a>
-                </li>
-                <li class="li_links">
-                    <a href="#links" class="link_child">Liens</a>
-                </li>
+                <!-- <div class="li_links_anchor_parent"> -->
+                    <li class="li_links li_links_anchor">
+                        <a href="#biographie" class="link_child" class="menu_hamburguer">Biographie</a>
+                    </li>
+                    <li class="li_links li_links_anchor">
+                        <a href="#news" class="link_child">Actualité</a>
+                    </li>
+                    <li class="li_links li_links_anchor">
+                        <a href="#realisations" class="link_child">Réalisations</a>
+                    </li>
+                    <li class="li_links li_links_anchor">
+                        <a href="#event" class="link_child">Événements</a>
+                    </li>
+                    <li class="li_links li_links_anchor">
+                        <a href="#pictures" class="link_child">Photos</a>
+                    </li>
+                    <li class="li_links li_links_anchor">
+                        <a href="#links" class="link_child">Liens</a>
+                    </li>
+                <!-- </div> -->
 
-                <li class="li_links">
+                
+
+                <!-- <li class="li_links">
                     <a href="fansite2.html" class="link">Kombilesa Mí</a>
                 </li>
 
                 <li class="li_links">
                     <a href="fansite3.html" class="link">Idir</a>
-                </li>
+                </li> -->
+
+                <!-- <li class="li_links contact_burger">
+                    <a href="contact.html" class="link">Contact</a>
+                </li> -->
             </ul>
 
 
@@ -100,13 +106,19 @@
 
     <main>
 
+        <a href="#top" class="link-top-button">
+            <img class="img-top-button" src="images/top-button.png" alt="Aller au commencement du site">
+        </a>
+
+        <span id="top"></span>
+
         <section class="main-section">
 
 <!-- Section bannière haut de page -->
 
             <section class="banner">
                 <h1 class="main-title"><strong>Damien Saez</strong></h1>
-                <img class="banner-image" src="images/Saez/apocalypse_-1536x850.png" alt="Damien Saez en concert">
+                 <img class="banner-image" src="images/Saez/apocalypse_-1536x850.png" alt="Damien Saez en concert"> 
             </section> 
 
 <!-- Section qui entoure toutes les sections des rubriques -->
@@ -330,12 +342,7 @@
                 </section>
 
         </section>
-                <!--Adding a top button flotant-->        
-                <a href="#top" class="link-top-button">
-                    <img class="img-top-button" src="images/top-button.png" alt="Aller au commencement du site">
-                </a>
-        
-                <span id="top"></span>
+                <!--Adding a top button flotant-->       
         
     </main>
 
