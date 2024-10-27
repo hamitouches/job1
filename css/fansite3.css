@@ -492,8 +492,6 @@ nav {
 ol, ul {
     list-style: none;
 }
-
-/*Définition du alteur et coleur du fond*/
 .header {
     height: var(--hauteur_header);
     background-color: var(--primary-color);
@@ -871,8 +869,6 @@ h1 {
               width: 40vw;
               margin: 0 10px;
             }
-      
-            /* Section liens des sites de fans */
       
             .fan {
               flex-direction: row;
