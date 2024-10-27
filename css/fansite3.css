@@ -296,7 +296,6 @@ h1 {
 .realisations{
     width: 100%;
     background-color: rgb(113, 108, 108);
-    border: 1px red;
     border-radius: 10px;
     box-shadow: 0 4px 8px;
     text-align: center;
@@ -874,7 +873,6 @@ h1 {
               flex-direction: row;
               font-size: 5em;
             }
-      
             /* Section réseaux sociaux */
       
             .rs {
